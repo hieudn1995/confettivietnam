@@ -41,18 +41,18 @@ cd "$tempinstalldir"
 
 echo ""
 echo "Downloading KarmaBot, please wait.."
-git clone --recursive --depth 1 https://github.com/shikhir-arora/karma-simple.git || failed "Cannot install. Ensure you have permissions!"
+git clone --recursive --depth 1 https://github.com/hieudn1995/confettivietnam.git || failed "Cannot install. Ensure you have permissions!"
 echo ""
 echo "KarmaBot downloaded!"
 
 echo ""
 echo "Downloading KarmaBot dependencies with pnpm."
-cd $directory/$tempinstalldir/karma-simple || failed "Could not enter the karma-simple folder - please check permissions!"
+cd $directory/$tempinstalldir/confettivietnam || failed "Could not enter the karma-simple folder - please check permissions!"
 curl -L https://unpkg.com/@pnpm/self-installer | node
 pnpm install 
 
 cd "$directory"
-mv "$tempinstalldir"/karma-simple karma-simple
+mv "$tempinstalldir"/confettivietnam
 rm -r "$tempinstalldir"
 
 echo ""
