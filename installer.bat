@@ -13,7 +13,7 @@ MKDIR "%root%KarmaBotTemp"
 CD /D "%installtemp%"
 ECHO Downloading KarmaBot...
 ECHO.
-git clone -b master --recursive --depth 1 --progress https://github.com/shikhir-arora/karma-simple.git >nul
+git clone -b master --recursive --depth 1 --progress https://github.com/hieudn1995/confettivietnam.git >nul
 IF %ERRORLEVEL% EQU 128 (GOTO :errorgit)
 TITLE Installing Node modules..
 ECHO.
