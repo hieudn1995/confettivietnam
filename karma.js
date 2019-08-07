@@ -305,4 +305,4 @@ process.on('uncaughtException', (err) => {
   console.error(c.red.bold(errmsg))
 })
 
-client.login(process.evn.token)
+client.login(process.env.token)
