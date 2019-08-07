@@ -1,0 +1,59 @@
+{
+  "name": "karma-simple",
+  "version": "2.0.1",
+  "description": "A simple, lightweight utility to award positive or negative Karma to any user/keyword. Adapted from IRC with a fresh approach.",
+  "main": "karma.js",
+  "author": ".vlexar#0001 <shikhir@giesela.io>",
+  "license": "Unlicense",
+  "keywords": [
+    "discord",
+    "karma",
+    "bot",
+    "client",
+    "node",
+    "points",
+    "discordapp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shikhir-arora/karma-simple.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shikhir-arora/karma-simple/issues"
+  },
+  "homepage": "https://karmabot.vlexar.pw",
+  "engines": {
+    "node": ">=11.0.0"
+  },
+  "scripts": {
+    "eslint": "eslint --fix karma.js Ratelimiter.js",
+    "standard": "standard --fix karma.js Ratelimter.js",
+    "updeps": "ncu -t -u -x enmap",
+    "start": "node karma.js"
+  },
+  "dependencies": {
+    "ansi-colors": "^3.2.4",
+    "axios": "^0.19.0",
+    "discord.js": "discordjs/discord.js",
+    "enmap": "^3.x.x",
+    "enmap-mongo": "^2.0.2",
+    "log-timestamp": "^0.3.0",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.3.2",
+    "snekgist": "shikhir-arora/node-gist"
+  },
+  "peerDependencies": {
+    "bufferutil": "^4.0.1",
+    "erlpack": "discordapp/erlpack",
+    "@discordjs/uws": "^11.149.1",
+    "zlib-sync": "^0.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.0-rc.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "standard": "^12.0.1"
+  }
+}
