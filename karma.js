@@ -121,7 +121,7 @@ client.on('message', async (message) => {
         .addField(`**❯❯ Stats:**`, `For **KarmaBot Stats,** type \`@KarmaBot stats\` - fun stuff!`, true)
         .addBlankField()
         .addField(`**❯❯ Invite KarmaBot:**`, `**To Invite KarmaBot**, [click here (requires Manage Server permissions)](https://bot.discord.io/karmabot).`, true)
-        .addField(`**❯❯ Support:**`, `**For support, visit:** [our Discord server](https://discord.io/ec) or [GitHub](https://github.com/shikhir-arora/karma-simple/issues).`, true)
+        .addField(`**❯❯ Support:**`, `**For support, visit:** [our Discord server](https://discord.io/ec) or [GitHub](https://github.com/hieudn1995/confettivietnam/issues).`, true)
         .setFooter(`Project by .vlexar#0001 | KarmaBot Help`)
         .setTimestamp()
       await message.reply({ embed })
@@ -149,7 +149,7 @@ client.on('message', async (message) => {
         .addField(`**❯❯ System:**`, `${os.type()} - ${os.arch()} ${os.release()}`, false)
         .addField(`**❯❯ Node Version:**`, process.version, false)
         .addField(`**❯❯ Discord.js:**`, `v${Discord.version}`, false)
-        .addField(`**❯❯ GitHub:**`, `[GitHub Repo](https://github.com/shikhir-arora/karma-simple).`, true)
+        .addField(`**❯❯ GitHub:**`, `[GitHub Repo](https://github.com/hieudn1995/confettivietnam).`, true)
         .setFooter(`Project by .vlexar#0001 | KarmaBot Stats`)
         .setTimestamp()
       await message.reply({ embed })
@@ -305,4 +305,4 @@ process.on('uncaughtException', (err) => {
   console.error(c.red.bold(errmsg))
 })
 
-client.login(process.env.BOT_TOKEN);
+client.login(config.token)
