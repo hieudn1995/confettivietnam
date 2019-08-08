@@ -305,4 +305,4 @@ process.on('uncaughtException', (err) => {
   console.error(c.red.bold(errmsg))
 })
 
-client.login(config.token)
+client.login(process.env.BOT_TOKEN);
