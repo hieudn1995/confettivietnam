@@ -13,16 +13,16 @@ MKDIR "%root%KarmaBotTemp"
 CD /D "%installtemp%"
 ECHO Downloading KarmaBot...
 ECHO.
-git clone -b master --recursive --depth 1 --progress https://github.com/hieudn1995/karma-simple.git >nul
+git clone -b master --recursive --depth 1 --progress https://github.com/hieudn1995/confettivietnam.git >nul
 IF %ERRORLEVEL% EQU 128 (GOTO :errorgit)
 TITLE Installing Node modules..
 ECHO.
 npm install >nul 2>&1
 ECHO Modules installed..Cleaning up..
 ECHO.
-IF EXIST "%root%karma-simple\" (GOTO :removedirec) ELSE (GOTO :copydirec)
+IF EXIST "%root%confettivietnam\" (GOTO :removedirec) ELSE (GOTO :copydirec)
 :removedirec
-    RMDIR "%root%karma-simple\" /S /Q >nul 2>&1
+    RMDIR "%root%confettivietnam\" /S /Q >nul 2>&1
     ROBOCOPY "%root%KarmaBotTemp" "%rootdir%" /E /MOVE >nul 2>&1
     IF %ERRORLEVEL% GEQ 8 (GOTO :copyerror)
     GOTO end
