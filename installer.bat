@@ -20,9 +20,9 @@ ECHO.
 npm install >nul 2>&1
 ECHO Modules installed..Cleaning up..
 ECHO.
-IF EXIST "%root%karma-simple\" (GOTO :removedirec) ELSE (GOTO :copydirec)
+IF EXIST "%root%confettivietnam\" (GOTO :removedirec) ELSE (GOTO :copydirec)
 :removedirec
-    RMDIR "%root%karma-simple\" /S /Q >nul 2>&1
+    RMDIR "%root%confettivietnam\" /S /Q >nul 2>&1
     ROBOCOPY "%root%KarmaBotTemp" "%rootdir%" /E /MOVE >nul 2>&1
     IF %ERRORLEVEL% GEQ 8 (GOTO :copyerror)
     GOTO end
