@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shikhir-arora/karma-simple.git"
+    "url": "git+https://github.com/hieudn1995/confettivietnam.git"
   },
   "bugs": {
-    "url": "https://github.com/shikhir-arora/karma-simple/issues"
+    "url": "https://github.com/hieudn1995/confettivietnam/issues"
   },
   "homepage": "https://karmabot.vlexar.pw",
   "engines": {
@@ -40,7 +40,7 @@
     "log-timestamp": "^0.3.0",
     "moment": "^2.24.0",
     "moment-duration-format": "^2.3.2",
-    "snekgist": "shikhir-arora/node-gist"
+    "snekgist": "confettivietnam/node-gist"
   },
   "peerDependencies": {
     "bufferutil": "^4.0.1",
