@@ -120,7 +120,7 @@ client.on('message', async (message) => {
         .addField(`**❯❯ Blacklist (Per Guild):**`, `To **blacklist** a user from being able to add or subtract Karma in a guild, create the role **NoKarma** and assign it to the users you wish to blacklist. Users can still lookup Karma, so this can act as a way for admins/mods to, for example, award points to users without the users all being able to add/remove Karma. By default this bot will take commands from any user, but messages [are internally rate-limited for spam protection](https://cdn.rawgit.com/shikhir-arora/karma-simple/3848016d/Ratelimiter.js).`, true)
         .addField(`**❯❯ Stats:**`, `For **KarmaBot Stats,** type \`@KarmaBot stats\` - fun stuff!`, true)
         .addBlankField()
-        .addField(`**❯❯ Invite KarmaBot:**`, `**To Invite KarmaBot**, [click here (requires Manage Server permissions)](https://bot.discord.io/karmabot).`, true)
+        .addField(`**❯❯ Invite KarmaBot:**`, `**To Invite KarmaBot**, [click here (requires Manage Server permissions)](https://discordapp.com/api/oauth2/authorize?client_id=608715647635161118&permissions=0&scope=bot).`, true)
         .addField(`**❯❯ Support:**`, `**For support, visit:** [our Discord server](https://discord.io/ec) or [GitHub](https://github.com/hieudn1995/confettivietnam/issues).`, true)
         .setFooter(`Project by .vlexar#0001 | KarmaBot Help`)
         .setTimestamp()
