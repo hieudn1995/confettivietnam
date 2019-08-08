@@ -2,7 +2,7 @@
 
 function failed {
     echo "$(tput setaf 1)$@$(tput sgr0)"
-    echo -e "\nFailed to install. Please visit https://github.com/shikhir-arora/karma-simple/issues.\n"
+    echo -e "\nFailed to install. Please visit https://github.com/hieudn1995/confettivietnam/issues.\n"
     exit 1
 }
 
